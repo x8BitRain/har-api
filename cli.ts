@@ -21,8 +21,8 @@ const startup = () => {
     return
   }
 
-  if (config.apiUrl && !config.apiUrl.endsWith('/')) {
-    config.apiUrl += '/'
+  if (config.apiUrl && config.apiUrl.endsWith('/')) {
+    config.apiUrl = config.apiUrl.slice(0, -1)
   }
 
   setupServer(config)

@@ -2,6 +2,10 @@
 
 A CLI tool that serves captured network requests from a .har file, like if your API was running locally.
 
+#### Why?
+
+For example, if you have an SPA or an app that makes requests to an API, you can use this tool mock that API locally from previously captured network requests, so you can develop without having to run your whole backend API locally or if you just want improved loading times.
+
 ### Requirements
 
 The Bun runtime is required to use this tool at the moment, you can download it here: 
@@ -10,19 +14,22 @@ https://bun.sh/docs/installation
 
 ### Installation
 
-```git clone https://github.com/x8BitRain/har-api.git && cd har-api && bun install```
+```sh
+git clone https://github.com/x8BitRain/har-api.git && cd har-api && bun install
+```
 
 ### Usage
 
-```bun run har-api <api-url> <path-to-har-file>```
- 
-Example: 
+```sh
+bun run har-api <api-url> <path-to-har-file>
+```
+Example:
 
-```bun run har-api http://api.mywebsite.com ~/Downloads/example.har```
+```sh
+bun run har-api http://api.mywebsite.com ~/Downloads/example.har
+```
 
 ### How do I actually use this?
-
-If for example you have an SPA that makes requests to an API, you can use this tool to serve the API locally from captured network requests, so you can develop the SPA without having to run your whole backend API locally.
 
 1. Go to your website and open the developer tools and go to the network tab.
 2. Hard reload the page (ctrl/cmd + shift + r) and wait for all the requests to finish loading.
