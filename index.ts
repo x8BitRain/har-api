@@ -17,7 +17,7 @@ export const setupServer = async (config: IHarApiConfig) => {
     },
   })
 
-  console.log(`🛜 HAR-api running at http://${server?.hostname}:${server?.port}/`)
+  console.log(`🛜 HAR-api running at http://${server?.hostname}:${server?.port}/ (point your API requests here) ✅`)
 }
 
 const createResponse = async (
