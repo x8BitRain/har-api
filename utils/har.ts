@@ -43,6 +43,7 @@ export const getHarRequests = (
     // const requestUrlCleaned = config.apiUrl.replace(/\/$/, '')
     return entries.find((entry: IHarContents) => {
         const urlPath = entry.request.url.replace(config.apiUrl, '')
+        console.log(urlPath, requestPath)
         return urlPath === requestPath
     })
 }
