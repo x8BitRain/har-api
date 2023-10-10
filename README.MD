@@ -25,7 +25,7 @@ Example:
 If for example you have an SPA that makes requests to an API, you can use this tool to serve the API locally from captured network requests, so you can develop the SPA without having to run your whole backend API locally.
 
 1. Go to your website and open the developer tools and go to the network tab.
-2. Hard reload the page (ctrl + shift + r) and wait for all the requests to finish loading.
+2. Hard reload the page (ctrl/cmd + shift + r) and wait for all the requests to finish loading.
    1. Some browsers have a "preserve log" option that you can enable to keep the requests after a hard reload. You can use this to click around the website a lot and capture the most amount of requests possible to reduce the likelihood of 404s when using this tool.
 3. Click on the "Export HAR" button ([example how-to](https://help.okta.com/oag/en-us/content/topics/access-gateway/troubleshooting-with-har.htm)).
 4. Run har-api with the URL of the API you want to mock and the path to the .har file you just downloaded.
