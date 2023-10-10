@@ -6,6 +6,12 @@ A CLI tool that serves captured network requests from a .har file, like if your 
 
 For example, if you have an SPA or an app that makes requests to an API, you can use this tool mock that API locally from previously captured network requests, so you can develop without having to run your whole backend API locally or if you just want improved loading times.
 
+### Features
+
+- Supports all HTTP request types.
+- Supports query params, request bodies, and request headers.
+- Requests not found in the HAR will be forwarded to the API URL you specify.
+
 ### Requirements
 
 The Bun runtime is required to use this tool at the moment, you can download it here: 

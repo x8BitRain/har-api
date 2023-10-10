@@ -34,9 +34,8 @@ const createResponse = async (
 
   const matchingRequest = getHarRequests(entries, config, requestUrlPath)
   if (!matchingRequest) {
-    console.error(`❌ Could not find ${requestUrlPath}`)
+    console.warn(`🌐 Could not find ${requestUrlPath}, forwarding request...`)
     const forwardedRequest = await forwardRequest(request, config, server)
-    console.log(forwardedRequest instanceof Response)
     if (!forwardedRequest) {
       return new Response('Not found', { status: 404 })
     }
