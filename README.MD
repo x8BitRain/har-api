@@ -26,6 +26,8 @@ git clone https://github.com/x8BitRain/har-api.git && cd har-api && bun install
 
 ### Usage
 
+While in the har-api directory:
+
 ```sh
 bun run har-api <api-url> <path-to-har-file>
 ```
