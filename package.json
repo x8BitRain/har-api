@@ -17,9 +17,6 @@
     "typescript": "5.0.0"
   },
   "dependencies": {
-    "@elysiajs/cors": "^0.7.1",
-    "@types/mime": "^3.0.2",
-    "elysia": "^0.7.15",
-    "mime": "^3.0.0"
+    "commander": "^11.0.0"
   }
 }
