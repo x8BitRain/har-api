@@ -4,7 +4,7 @@ A CLI tool that serves captured network requests from a .har file, like if your 
 
 #### Why?
 
-For example, if you have an SPA or an app that makes requests to an API, you can use this tool mock that API locally from previously captured network requests, so you can develop without having to run your whole backend API locally or if you just want improved loading times.
+For example, if you have an SPA or an app that makes requests to an API, you can use this tool mock that API locally from previously captured network requests stored in a .har file, so you can develop without having to run your whole backend API locally or if you just want improved loading times.
 
 ### Features
 
