@@ -14,6 +14,7 @@ export const getHarEntries = async (
 ): Promise<IHarContents[]> => {
   const harText = await Bun.file(config.har).text()
 
+  // TODO: Support multiple HAR files.
   const logEntries = [config.har].reduce(
     function (mergedHar, harPath) {
       const har = JSON.parse(harText)

@@ -12,6 +12,8 @@ const config = {
   apiUrl: '',
 }
 
+// TODO: Support a config file.
+
 const startup = () => {
   if (!config.har || !config.apiUrl) {
     console.error('❌ You must specify a HAR file and an API URL')
