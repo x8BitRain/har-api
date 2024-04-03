@@ -1,6 +1,6 @@
 # har-api
 
-A CLI tool that serves captured network requests from a .har file, like if your API was running locally.
+A Bun CLI tool that serves captured network requests from a .har file, like if your API was running locally.
 
 #### Why?
 
